@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: local('PressStart2P'), local('PressStart2P-Regular'),
+        url('/fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+* {
+  font-family: 'PressStart2P', monospace !important;
+  font-weight: 400;
+}
+
+#root {
+  background-image: url('/images/bg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+canvas {
+  touch-action: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+.overlay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.overlay-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  top: 0;
+  left: 0;
+}
+
+.pointer-events-all {
+  pointer-events: all;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.overlay-bg {
+  background-image: url('/images/bg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  align-items: start;
+}
+
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.8rem;
+}
+
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #ff0055;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+
+
